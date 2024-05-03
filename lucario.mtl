@@ -1,0 +1,53 @@
+# Blender 3.6.2 MTL File: 'lucario.blend'
+# www.blender.org
+
+newmtl body_a.001
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Ns C:/pm0448_00_00_body_a_rgn.png
+map_d textures/pm0448_00_00_body_a_alb.png
+
+newmtl body_a_01.001
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Ns textures/pm0448_00_00_body_a_rgn.png
+map_refl C:/pm0448_00_00_body_a_mtl.png
+map_d C:/pm0448_00_00_body_a_alb.png
+
+newmtl body_b_01.001
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Ns C:/pm0448_00_00_body_b_rgn.png
+map_d C:/pm0448_00_00_body_b_alb.png
+
+newmtl l_eye.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_d C:/pm0448_00_00_eye_alb.png
+
+newmtl r_eye.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_d C:/pm0448_00_00_eye_alb.png
