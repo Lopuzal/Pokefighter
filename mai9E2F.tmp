@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://r0tf3uij4kgn"]
+
+[ext_resource type="PackedScene" uid="uid://buhnnjj2kvmla" path="res://lucario/Lucario.tscn" id="1_rahgs"]
+[ext_resource type="Script" path="res://main.gd" id="1_wfsbo"]
+[ext_resource type="Script" path="res://Player.gd" id="3_gclom"]
+[ext_resource type="Script" path="res://input/InputManager.gd" id="4_mlvph"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qqvdn"]
+size = Vector3(60, 2, 60)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ir8yr"]
+size = Vector3(60, 2, 60)
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_wfsbo")
+
+[node name="Ground" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+shape = SubResource("BoxShape3D_qqvdn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+mesh = SubResource("BoxMesh_ir8yr")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 3)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.0369577, 0.999317, 0, -0.999317, -0.0369577, 0, 42.819, 0)
+shadow_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("1_rahgs")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.96147, 0, 0)
+script = ExtResource("3_gclom")
+
+[node name="InputManager" type="Node" parent="."]
+script = ExtResource("4_mlvph")
+
+[node name="TextureRect" type="TextureRect" parent="InputManager"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="InputDisplay" type="VBoxContainer" parent="InputManager"]
+offset_right = 40.0
+offset_bottom = 40.0

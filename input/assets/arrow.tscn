@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://3e5mo4cinhef"]
+
+[ext_resource type="Texture2D" uid="uid://buo8jrk3ee4kc" path="res://input/assets/arrow.png" id="1_7ray4"]
+
+[node name="Control" type="Control"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="arrow" type="TextureRect" parent="."]
+texture_filter = 6
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+pivot_offset = Vector2(16, 16)
+texture = ExtResource("1_7ray4")
+stretch_mode = 2

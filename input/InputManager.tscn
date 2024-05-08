@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1dx4ojokwqn4"]
+
+[ext_resource type="Script" path="res://input/InputManager.gd" id="1_2tvep"]
+[ext_resource type="Script" path="res://input/InputBuffer.gd" id="2_08win"]
+[ext_resource type="PackedScene" uid="uid://dmdca1ksr0j0h" path="res://input/input_state.tscn" id="3_jc66k"]
+
+[node name="InputManager" type="Node"]
+script = ExtResource("1_2tvep")
+
+[node name="InputBuffer" type="Node" parent="."]
+script = ExtResource("2_08win")
+
+[node name="InputState" parent="." instance=ExtResource("3_jc66k")]
